@@ -1,0 +1,117 @@
+.random{
+  background-color: blue;
+  font-size: medium;
+  display: flex;
+  text-align: center;
+}
+.prompt-input{
+ 
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin:20px auto;
+  padding: 20px;
+}
+.prompt-input input{
+  width: 80%;
+  padding: 20px;
+  border-radius: 20px;
+  border: none;
+}
+
+.prompt-input button{
+  background-color: green;
+  color: white;
+  font-size: medium;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+}
+
+.prompt-input button:hover{
+  background-color: red;
+}
+.Responce{
+  width: 100%;
+
+  min-height: 100px;
+ max-height: 400px;
+
+}
+.Responce p{
+color: navy;
+padding:5px 0 0 20px;
+background-color: darksalmon;
+  display: flex;
+  text-align: center;
+ 
+  align-items:flex-start;
+}
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  display: grid;
+  border-radius: 50%;
+  background:
+    linear-gradient(0deg ,rgb(0 0 0/50%) 30%,#0000 0 70%,rgb(0 0 0/100%) 0) 50%/8% 100%,
+    linear-gradient(90deg,rgb(0 0 0/25%) 30%,#0000 0 70%,rgb(0 0 0/75% ) 0) 50%/100% 8%;
+  background-repeat: no-repeat;
+  animation: l23 1s infinite steps(12);
+}
+.loader::before,
+.loader::after {
+   content: "";
+   grid-area: 1/1;
+   border-radius: 50%;
+   background: inherit;
+   opacity: 0.915;
+   transform: rotate(30deg);
+}
+.loader::after {
+   opacity: 0.83;
+   transform: rotate(60deg);
+}
+@keyframes l23 {
+  100% {transform: rotate(1turn)}
+}
+.loaders{
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.robo{
+ background-color: darkred;
+ padding: 5px;
+  font-size: x-large;
+  color: white;
+  border-radius: 50%;
+}
+.background{
+  background-image: url('./myImage.jpg');
+background-position: inherit;
+background-size: cover;
+}
+.myImage{
+  display: flex;
+ 
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: fit-content;
+  margin: auto;
+  padding: 2px;
+  color: white;
+}
+.myImage img{
+ height: 100px;
+width: 80%;
+border-radius: 20px;
+}
